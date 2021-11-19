@@ -25,6 +25,9 @@
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('app', require('./components/app.vue').default);
+Vue.component('buttom', require('./components/buttom.vue').default);
+Vue.component('thder', require('./components/thder.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
