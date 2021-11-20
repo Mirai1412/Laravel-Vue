@@ -1,6 +1,5 @@
 <template>
   <div id="buttompage">
-
     <!-- <img src="/img/q4.png" class="bti1"> -->
     <div class="buttomul">
       <ul>
@@ -30,7 +29,8 @@ export default {
 
 <style lang="scss">
 #buttompage{
-  width: 90%;
+  width: 1386px;
+  min-width:1386px;
   color: white;
   height: 100px;
   margin: 0 auto;
@@ -79,6 +79,9 @@ export default {
     margin: 0 20px;
     height: 49px;
     line-height: 49px;
+    &:hover{
+        color: red;
+    }
   }
 }
 .bti1{

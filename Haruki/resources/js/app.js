@@ -15,11 +15,16 @@ const router = new VueRouter({
             name: 'home',
             component: () => import('./components/Home/Home.vue'),
         },
-        // {
-        //     path: '/menu',
-        //     name: 'task',
-        //     component: () => import('./components/task/Task.vue'),
-        // }
+        {
+            path: '/menu',
+            name: 'menu',
+            component: () => import('./components/expage/Menu.vue'),
+        },
+        {
+            path: '/post',
+            name: 'post',
+            component: () => import('./components/expage/Post.vue'),
+        }
     ]
 });
 

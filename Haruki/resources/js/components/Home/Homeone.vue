@@ -15,17 +15,6 @@
                 <div class="homecoffee">
                     <img src="/img/아메리카노.png" class="coffeeimg">
                         <h1>{{ title }}</h1>
-                            <p>따뜻한 녹차는 마음도 따뜻하게!
-                                <br>
-                            가격 : 4500원
-                            </p>
-                        <h2>장바구니 -></h2>
-                </div>
-            </div>
-            <div class="coffeechose">
-                <div class="homecoffee">
-                    <img src="/img/아메리카노.png" class="coffeeimg">
-                        <h1>{{ title }}</h1>
                             <p>{{ content }}
                                 <br>
                             {{ weiter }}
@@ -33,8 +22,6 @@
                         <h2>장바구니 -></h2>
                 </div>
             </div>
-
-
                 <img src="/img/q5.png" class="tree" >
                 <img src="/img/a4.png" class="tree2" >
         </div>
@@ -84,7 +71,7 @@ export default {
             height: 300px;
             position: absolute;
             z-index: 0;
-            top: -50px;
+            top: -30px;
         }
         h1 {
             z-index: 5;

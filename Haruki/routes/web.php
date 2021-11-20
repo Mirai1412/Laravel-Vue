@@ -26,5 +26,7 @@ require __DIR__.'/auth.php';
 
 Auth::routes();
 
+// axios.get(`/users/${user.id}`, { user: { id: id, name: user.name }})
+// 이미지같은 걸 넘겨줄땐 FormData
 
-
+// Route::get('/users/{user}', controller index);

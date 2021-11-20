@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <Header/>
+        <Top/>
         <div class="container">
             <router-view/>
         </div>
@@ -9,13 +9,13 @@
     </div>
 </template>
 <script>
-import Header from "./Header.vue";
+import Top from "./Top.vue";
 import Control from "./Control.vue";
 import Bottom from "./Bottom.vue";
 
 export default {
     components: {
-        Header,
+        Top,
         Bottom,
         Control
     },
