@@ -26,19 +26,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'post',
   data: function data() {
@@ -48,21 +35,9 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    postMenus: function postMenus() {
-      var _this = this;
-
-      var formData = new FormData();
-      formData.append("name", this.name);
-      formData.append("text", this.text);
-      axios.post("/store", formData).then(function (response) {
-        _this.name = "";
-        _this.text = "";
-        alert('작성완료');
-      }).then(function (result) {
-        _this.$parent.getMenu();
-      })["catch"](function (error) {
-        console.log(error);
-      });
+    // 메서드 구현
+    submitForm: function submitForm() {
+      console.log(this.username, this.password);
     }
   }
 });
@@ -220,9 +195,9 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "test12" }, [
-    _c("form", [
+    _c("form", { on: { submit: _vm.submitForm } }, [
       _c("div", [
-        _c("label", { attrs: { for: "name" } }, [_vm._v("메뉴이름")]),
+        _c("label", { attrs: { for: "name" } }, [_vm._v("name: ")]),
         _vm._v(" "),
         _c("input", {
           directives: [
@@ -233,13 +208,7 @@ var render = function () {
               expression: "name",
             },
           ],
-          attrs: {
-            type: "text",
-            name: "name",
-            id: "name",
-            placeholder: "Menu Name",
-            required: "",
-          },
+          attrs: { id: "name", type: "text" },
           domProps: { value: _vm.name },
           on: {
             input: function ($event) {
@@ -253,7 +222,7 @@ var render = function () {
       ]),
       _vm._v(" "),
       _c("div", [
-        _c("label", { attrs: { for: "text" } }, [_vm._v("메뉴설명")]),
+        _c("label", { attrs: { for: "text" } }, [_vm._v("text: ")]),
         _vm._v(" "),
         _c("input", {
           directives: [
@@ -264,7 +233,7 @@ var render = function () {
               expression: "text",
             },
           ],
-          attrs: { type: "text", name: "text", id: "text", required: "" },
+          attrs: { id: "text", type: "text" },
           domProps: { value: _vm.text },
           on: {
             input: function ($event) {
@@ -276,6 +245,8 @@ var render = function () {
           },
         }),
       ]),
+      _vm._v(" "),
+      _c("button", { attrs: { type: "submit" } }, [_vm._v("create")]),
     ]),
   ])
 }

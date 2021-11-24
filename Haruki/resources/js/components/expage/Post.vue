@@ -1,31 +1,18 @@
 <template>
 <div class="test12">
-    <form>
+  <form v-on:submit="submitForm">
     <div>
-      <label for="name">메뉴이름</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Menu Name"
-        v-model="name"
-        required
-      />
+      <label for="name">name: </label>
+      <input id="name" type="text"  v-model="name">
     </div>
     <div>
-      <label for="text">메뉴설명</label>
-      <input
-        type="text"
-        name="text"
-        id="text"
-        v-model="text"
-        required
-      />
+      <label for="text">text: </label>
+      <input id="text" type="text"   v-model="text">
     </div>
-    </form>
+    <button type="submit">create</button>
+  </form>
 </div>
 </template>
-
 <script>
 export default {
     name:'post',
@@ -35,28 +22,14 @@ export default {
             text: "",
         };
     },
-    methods: {
-        postMenus() {
-        const formData = new FormData();
-        formData.append("name", this.name);
-        formData.append("text", this.text);
-        axios
-        .post("/store", formData)
-        .then((response) => {
-          this.name = "";
-          this.text = "";
-          alert('작성완료');
-        }).then((result) => {
-            this.$parent.getMenu();
-          })
-        .catch((error) =>{
-            console.log(error);
-        });
-    },
-}
+    methods: { // 메서드 구현
+    submitForm: function() {
+      console.log(this.username, this.password);
+    }
+  }
+
 }
 </script>
-
 <style lang="scss">
 .test12{
     margin: 50px 0 0 430px;

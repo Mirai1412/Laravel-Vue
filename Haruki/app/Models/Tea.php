@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Tea extends Model
 {
     use HasFactory;
+
+    public function company(){
+        return $this->belongsTo(Teaname::class);
+    }
 }

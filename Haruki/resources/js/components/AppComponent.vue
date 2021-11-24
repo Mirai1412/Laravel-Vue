@@ -2,7 +2,7 @@
     <div class="main">
         <Top/>
         <div class="container">
-            <router-view/>
+            <Home/>
         </div>
         <Bottom/>
         <Control/>
@@ -12,12 +12,14 @@
 import Top from "./Top.vue";
 import Control from "./Control.vue";
 import Bottom from "./Bottom.vue";
+import Home from './Home/Home.vue';
 
 export default {
     components: {
         Top,
         Bottom,
-        Control
+        Control,
+        Home
     },
 };
 </script>
