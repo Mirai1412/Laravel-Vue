@@ -19,7 +19,7 @@
 </template>
 <script>
 export default {
-    name:'control'
+    name:'homeimg'
 }
 </script>
 <style lang="scss">

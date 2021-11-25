@@ -5,19 +5,22 @@
         </div>
         <Homeone/>
         <Hometwo/>
-        <Homeimg/>
+        <Homepost/>
+        <!-- <Homeimg/> -->
     </div>
 </template>
 <script>
 import Homeone from "./Homeone.vue";
 import Hometwo from "./Hometwo.vue";
-import Homeimg from "./Homeimg.vue";
+// import Homeimg from "./Homeimg.vue";
+import Homepost from "./Homepost.vue";
 
 export default {
     components: {
         Homeone,
         Hometwo,
-        Homeimg
+        Homepost
+        // Homeimg
 
     },
 };
