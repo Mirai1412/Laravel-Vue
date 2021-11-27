@@ -24,6 +24,8 @@ export default {
     margin-top: 20px;
     border: 1px solid black;
     .instar{
+        display: flex;
+        flex-wrap: wrap;
         width: 500px;
         height: 400px;
         border: 3px solid black;

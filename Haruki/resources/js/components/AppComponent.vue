@@ -2,7 +2,7 @@
     <div class="main" id="app">
         <Top/>
         <div class="container">
-            <Home/>
+            <slot/>
         </div>
         <Bottom/>
         <Control/>
@@ -13,13 +13,15 @@ import Top from "./Top.vue";
 import Control from "./Control.vue";
 import Bottom from "./Bottom.vue";
 import Home from './Home/Home.vue';
+import Menu from './expage/Menu.vue';
 
 export default {
     components: {
         Top,
         Bottom,
         Control,
-        Home
+        Home,
+        Menu
     },
 };
 </script>

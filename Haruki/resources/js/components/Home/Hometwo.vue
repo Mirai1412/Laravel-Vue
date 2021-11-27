@@ -21,6 +21,8 @@ export default {
     border-top: 3px solid black;
     height: 200px;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     padding: 30px 0;

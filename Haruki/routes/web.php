@@ -35,9 +35,9 @@ Auth::routes();
 Route::get('/', function () { // GET / 로 접근하면 이 함수 실행
     return view('Home');
 });
-Route::get('/question', function () { // GET / 로 접근하면 이 함수 실행
-    return view('Home');
+Route::get('/menu', function () {
+    return view('Menu');
 });
 // POST /store 로 접근하면 TeaController의 'store'메소드 실행
 Route::post('/store', [TeaController::class, 'store'])->name('tea.store');
-Route::get('/menu', [TeaController::class, 'show'])->name('tea.show');
+// Route::get('/menu', [TeaController::class, 'show'])->name('tea.show');

@@ -3,9 +3,11 @@
         <div class="homeimg">
             <img src="/img/d2.png" class="dag">
         </div>
-        <Homeone/>
-        <Hometwo/>
         <Homepost/>
+        <Hometwo/>
+        <Homeone/>
+
+
         <!-- <Homeimg/> -->
     </div>
 </template>
