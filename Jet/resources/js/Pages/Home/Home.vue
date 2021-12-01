@@ -1,11 +1,10 @@
 <template>
     <div class="mainbox">
+
         <div class="homeimg">
             <!-- <img src="/img/d2.png" class="dag"> -->
         </div>
-
-        <h2>dasdsfs</h2>
-
+        <h1>sadasdafszdfsafawfdasddsdsds</h1>
         <!-- <Homeimg/> -->
     </div>
 </template>

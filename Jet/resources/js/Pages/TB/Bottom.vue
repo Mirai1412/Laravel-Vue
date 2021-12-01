@@ -23,7 +23,9 @@
 
 <script>
 export default {
-  name: 'buttom',
+    setup() {
+
+    }
 }
 </script>
 

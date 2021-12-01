@@ -24,14 +24,25 @@ use Inertia\Inertia;
 //     ]);
 // });
 
-Route::get('/', function () {
-    return Inertia::render('App', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+Route::get('/', function() {
+    return Inertia::render('App');
 });
+// Route::get('/', function () {
+//     return Inertia::render('App', [
+//         // 'canLogin' => Route::has('login'),
+//         // 'canRegister' => Route::has('register'),
+//         // 'laravelVersion' => Application::VERSION,
+//         // 'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+
+// Route::get('/menu', function () {
+//     return Inertia::render('App', [
+
+//     ]);
+// });
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');

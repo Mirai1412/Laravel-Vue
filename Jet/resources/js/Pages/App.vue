@@ -1,9 +1,16 @@
 <template>
-    <div class="main" id="app">
-
-        <div class="container">
-           <h1>efefe</h1>
+    <Layout>
+        <div>a
+            dsafadsfdasf
         </div>
-
-    </div>
+    </Layout>
 </template>
+<script>
+import Layout from '@/Shared/Layout.vue'
+
+export default {
+     components:{
+         Layout
+     },
+}
+</script>
