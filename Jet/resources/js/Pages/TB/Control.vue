@@ -31,6 +31,9 @@ export default {
 }
 </script>
 <style lang="scss">
+html{
+  scroll-behavior: smooth;
+}
 .control{
     z-index: 6;
     position: fixed;

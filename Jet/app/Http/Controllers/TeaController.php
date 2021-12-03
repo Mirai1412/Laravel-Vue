@@ -24,7 +24,7 @@ class TeaController extends Controller
      */
     public function create()
     {
-        //
+        //프랍스
     }
 
     /**

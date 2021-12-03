@@ -1,17 +1,12 @@
 <template>
+<div>
     <Head title="Log in" />
-
-    <jet-authentication-card>
-        <template #logo>
-            <jet-authentication-card-logo />
-        </template>
-
+    <Top/>
+    <jet-authentication-card style="background-color: white;">
         <jet-validation-errors class="mb-4" />
-
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
             {{ status }}
         </div>
-
         <form @submit.prevent="submit">
             <div>
                 <jet-label for="email" value="Email" />
@@ -41,6 +36,9 @@
             </div>
         </form>
     </jet-authentication-card>
+    <Control/>
+    <Bottom/>
+</div>
 </template>
 
 <script>
@@ -53,6 +51,9 @@
     import JetLabel from '@/Jetstream/Label.vue'
     import JetValidationErrors from '@/Jetstream/ValidationErrors.vue'
     import { Head, Link } from '@inertiajs/inertia-vue3';
+    import Top from '@/Pages/TB/Top.vue';
+    import Bottom from '@/Pages/TB/Bottom.vue';
+    import Control from '@/Pages/TB/Control.vue';
 
     export default defineComponent({
         components: {
@@ -65,6 +66,9 @@
             JetLabel,
             JetValidationErrors,
             Link,
+            Top,
+            Control,
+            Bottom
         },
 
         props: {

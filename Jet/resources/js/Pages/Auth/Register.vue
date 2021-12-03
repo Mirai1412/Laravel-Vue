@@ -1,11 +1,8 @@
 <template>
+<div>
+    <Top/>
     <Head title="Register" />
-
-    <jet-authentication-card>
-        <template #logo>
-            <jet-authentication-card-logo />
-        </template>
-
+    <jet-authentication-card style="background-color: white">
         <jet-validation-errors class="mb-4" />
 
         <form @submit.prevent="submit">
@@ -52,6 +49,9 @@
             </div>
         </form>
     </jet-authentication-card>
+    <Control/>
+    <Bottom/>
+</div>
 </template>
 
 <script>
@@ -63,6 +63,9 @@
     import JetCheckbox from '@/Jetstream/Checkbox.vue'
     import JetLabel from '@/Jetstream/Label.vue'
     import JetValidationErrors from '@/Jetstream/ValidationErrors.vue'
+    import Top from '@/Pages/TB/Top.vue';
+    import Bottom from '@/Pages/TB/Bottom.vue';
+    import Control from '@/Pages/TB/Control.vue';
     import { Head, Link } from '@inertiajs/inertia-vue3';
 
     export default defineComponent({
@@ -76,6 +79,9 @@
             JetLabel,
             JetValidationErrors,
             Link,
+            Top,
+            Control,
+            Bottom
         },
 
         data() {

@@ -22,3 +22,4 @@ if (mix.inProduction()) {
     mix.version();
 }
 
+mix.browserSync('http://localhost:8000');

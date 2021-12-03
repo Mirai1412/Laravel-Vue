@@ -14,18 +14,18 @@
     </div>
     <div class="headerul">
         <ul>
-            <li><router-link to="/" class="rl">메인</router-link></li>
+            <li><a href="/" class="rl">메인</a></li>
             <li><a href="/menu" class="rl">메뉴</a></li>
-            <li><router-link to="/coffee" class="rl">주문하기</router-link></li>
-            <li><router-link to="/basket" class="rl">장바구니</router-link></li>
+            <li><a href="/coffee" class="rl">주문하기</a></li>
+            <li><a href="/basket" class="rl">장바구니</a></li>
             <li><a href="/question" class="rl">문의하기</a></li>
         </ul>
     </div>
     <div class="headerul2">
         <ul>
-            <li><router-link to="/login" class="rl">로그인</router-link></li>
-            <li><router-link to="/" class="rl">회원가입</router-link></li>
-            <li><router-link to="/post" class="rl">메뉴작성</router-link></li>
+            <li><a href="/login" class="rl">로그인</a></li>
+            <li><a href="/register" class="rl">회원가입</a></li>
+            <li><a href="/post" class="rl">메뉴작성</a></li>
         </ul>
     </div>
   </div>
