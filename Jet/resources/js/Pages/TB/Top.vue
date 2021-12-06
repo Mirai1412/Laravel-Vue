@@ -23,11 +23,17 @@
     </div>
     <div class="headerul2">
         <div v-if="canLogin == false">
-            <Link v-if="$page.props.user" :href="route('Home')" class="text-sm text-gray-700 underline">
-               <p>Home</p>
-            </Link>
-            <Link v-if="$page.props.user" :href="route('Home')" class="text-sm text-gray-700 underline">
-                주문내용
+            <form @submit.prevent="logout">
+            <jet-dropdown-link as="button">
+                로그아웃
+            </jet-dropdown-link>
+            </form>
+            <jet-dropdown-link :href="route('api-tokens.index')" v-if="$page.props.jetstream.hasApiFeatures">
+                API Tokens
+            </jet-dropdown-link>
+
+            <Link v-if="$page.props.user" :href="route('profile.show')" class="text-sm text-gray-700 underline">
+                 <p>프로필</p>
             </Link>
             <template v-else>
                 <Link :href="route('login')" class="text-sm text-gray-700 underline">
@@ -58,7 +64,11 @@
             canLogin: Boolean,
             canRegister: Boolean,
         },
-
+        methods: {
+            logout() {
+                this.$inertia.post(route('logout'));
+            },
+        }
     })
 </script>
 

@@ -3,12 +3,13 @@
             <div class="instar">
                 <img src="/img/instart.jpg">
                 <p>mirai_0807</p>
-                <button>프로필 편집</button>
+                <p>kkmm0807@naver.com</p>
                 <p>주문내역 5</p>
-                <p>주문내용</p>
-                <p>주문내용</p>
+                <p>배송 상태</p>
+                <p></p>
                 <p>임채환<br>
                    1999.8.7</p>
+                <button>프로필 편집</button>
             </div>
 
         </div>
@@ -34,12 +35,15 @@ export default {
     .instar{
         display: flex;
         flex-wrap: wrap;
-        width: 500px;
-        height: 400px;
+        width: 1380px;
+        height: 200px;
+        margin: 0 auto;
         border: 3px solid black;
-        border-radius: 10%;
+
         img{
-            width: 200px;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
             border-radius: 100%;
             border: 1px solid black;
         }
