@@ -10,7 +10,9 @@
                 <p>임채환<br>
                    1999.8.7</p>
             </div>
+
         </div>
+
 </template>
 <script>
 export default {
@@ -19,10 +21,16 @@ export default {
 </script>
 <style lang="scss">
 .homepost{
-    width: 1110px;
-    margin: 0 auto;
-    margin-top: 20px;
-    border: 1px solid black;
+    width: 100%;
+    padding: 50px;
+    margin-top: 0px;
+    position: relative;
+    .postimg1{
+        position: absolute;
+        top: 0;
+        right:   0;
+    }
+
     .instar{
         display: flex;
         flex-wrap: wrap;

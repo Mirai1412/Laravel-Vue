@@ -7,7 +7,7 @@
         <Homepost/>
         <Hometwo/>
         <Homeone/>
-            <Bottom/>
+        <Bottom/>
     <Control/>
     </div>
 </template>
@@ -28,14 +28,16 @@ export default {
         Top,
         Bottom,
         Control
-        // Homeimg
     },
 };
 </script>
 <style>
-
+body{
+    width: 1536px;
+}
 .dag{
     width: 100%;
-    margin: 20px 0;
+    height: 455px;
+    margin-top: 20px;
 }
 </style>

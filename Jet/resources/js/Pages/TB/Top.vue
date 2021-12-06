@@ -22,22 +22,44 @@
         </ul>
     </div>
     <div class="headerul2">
-        <ul>
-            <li><a href="/login" class="rl">로그인</a></li>
-            <li><a href="/register" class="rl">회원가입</a></li>
-            <li><a href="/post" class="rl">메뉴작성</a></li>
-        </ul>
+        <div v-if="canLogin == false">
+            <Link v-if="$page.props.user" :href="route('Home')" class="text-sm text-gray-700 underline">
+               <p>Home</p>
+            </Link>
+            <Link v-if="$page.props.user" :href="route('Home')" class="text-sm text-gray-700 underline">
+                주문내용
+            </Link>
+            <template v-else>
+                <Link :href="route('login')" class="text-sm text-gray-700 underline">
+                    <p>로그인</p>
+                </Link>
+
+                <Link v-if="canRegister == false" :href="route('register')" class="ml-4 text-sm text-gray-700 underline">
+                    <p>회원가입</p>
+                </Link>
+            </template>
+        </div>
+
     </div>
+
   </div>
 
 </template>
 
 <script>
-export default {
-    setup() {
+    import { defineComponent } from 'vue'
+    import { Link } from '@inertiajs/inertia-vue3';
 
-    }
-}
+    export default defineComponent({
+        components: {
+            Link
+        },
+        props: {
+            canLogin: Boolean,
+            canRegister: Boolean,
+        },
+
+    })
 </script>
 
 <style lang="scss">
@@ -170,22 +192,26 @@ export default {
   height: 47px;
   justify-content: center;
   position: relative;
-  ul{
-      margin: 0;
-      padding: 0;
-      position: absolute;
-  }
-  li{
+//   ul{
+//       margin: 0;
+//       padding: 0;
+//       position: absolute;
+//   }
+//   li{
+
+//   }
+//   li:hover{
+//       border-bottom:2px solid red;
+//   }
+    p{
       font-family: 'Nanum Pen Script', cursive;
-      font-size: 1.5em;
+      font-size: 1.8em;
       display: inline-block;
       margin: 0 20px;
       padding: 5px 0;
       height: 47px;
-  }
-  li:hover{
-      border-bottom:2px solid red;
-  }
+      line-height: 41px;
+    }
   a{
     color: black;
     text-decoration: none;

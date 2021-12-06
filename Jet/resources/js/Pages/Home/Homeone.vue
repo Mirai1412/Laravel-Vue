@@ -22,6 +22,28 @@
                         <h2>장바구니 -></h2>
                 </div>
             </div>
+                        <div class="coffeechose">
+                <div class="homecoffee">
+                    <img src="/img/아메리카노.png" class="coffeeimg">
+                        <h1>{{ title }}</h1>
+                            <p>{{ content }}
+                                <br>
+                            {{ weiter }}
+                            </p>
+                        <h2>장바구니 -></h2>
+                </div>
+            </div>
+                        <div class="coffeechose">
+                <div class="homecoffee">
+                    <img src="/img/아메리카노.png" class="coffeeimg">
+                        <h1>{{ title }}</h1>
+                            <p>{{ content }}
+                                <br>
+                            {{ weiter }}
+                            </p>
+                        <h2>장바구니 -></h2>
+                </div>
+            </div>
                 <img src="/img/q5.png" class="tree" >
                 <img src="/img/a4.png" class="tree2" >
         </div>
@@ -40,7 +62,7 @@ export default {
 </script>
 <style lang="scss">
 .maincoffee {
-    width: 100%;
+    width: 1110px;
     margin: 0  213px;
     height: 700px;
     margin-bottom: 20px;
@@ -53,7 +75,7 @@ export default {
         top: 260px;
     }
     .tree2{
-        right: 538px;
+        right: 110px;
         width: 455px;
         position: absolute;
         z-index: 1;

@@ -16,7 +16,7 @@ use Inertia\Inertia;
 */
 
 // Route::get('/', function () {
-//     return Inertia::render('Welcome', [
+//     return Inertia::render('Home', [
 //         'canLogin' => Route::has('login'),
 //         'canR0egister' => Route::has('register'),
 //         'laravelVersion0' => Application::VERSION,
@@ -24,12 +24,20 @@ use Inertia\Inertia;
 //     ]);
 // });
 
-// Route::get('/', function() {
-//     return Inertia::render('Home');
+// Route::get('/menu', function() {
+//     return Inertia::render('Welcome');
 // });
-Route::get('/menu', function() {
-    return Inertia::render('Menu');
-});
+
+
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// });
+
+
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->name('dashboard');
 
 Route::get('/', function () {
     return Inertia::render('Home', [
@@ -38,16 +46,4 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
-
-// Route::get('/menu', function () {
-//     return Inertia::render('App', [
-
-//     ]);
-// });
-
-
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
-    return Inertia::render('Home');
-})->name('dashboard');
+})->name('Home');

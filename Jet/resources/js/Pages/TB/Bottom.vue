@@ -16,7 +16,8 @@
       <p>A cup of warm coffee in your heart</p>
       </div>
     </div>
-
+    <img src="/img/b54.png"  class="bottomimg1">
+    <img src="/img/b53.png"  class="bottomimg2">
   </div>
 
 </template>
@@ -40,6 +41,21 @@ export default {
   margin-top: 50px;
   position: relative;
   padding-top: 50px;
+
+
+.bottomimg1{
+    position: absolute;
+    top: -653px;
+    width: 48%;
+    right: -75px;
+}
+.bottomimg2{
+    position: absolute;
+    top: -615px;
+    width: 30%;
+    left:  -100px;
+
+}
 }
 .buttomt{
   background-color: black;
