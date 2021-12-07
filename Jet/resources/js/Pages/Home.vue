@@ -33,7 +33,9 @@ export default {
 </script>
 <style>
 body{
-    width: 1536px;
+    max-width: 1536px;
+    min-width: 1536px;
+    margin: 0 auto;
 }
 .dag{
     width: 100%;

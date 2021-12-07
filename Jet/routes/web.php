@@ -15,24 +15,10 @@ use Inertia\Inertia;
 |
 */
 
-// Route::get('/', function () {
-//     return Inertia::render('Home', [
-//         'canLogin' => Route::has('login'),
-//         'canR0egister' => Route::has('register'),
-//         'laravelVersion0' => Application::VERSION,
-//         'phpVersion' => PHP_VERSION,
-//     ]);
-// });
 
-// Route::get('/menu', function() {
-//     return Inertia::render('Welcome');
-// });
-
-
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return Inertia::render('Dashboard');
-// });
-
+Route::get('/menu', function() {
+    return Inertia::render('Menu');
+});
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

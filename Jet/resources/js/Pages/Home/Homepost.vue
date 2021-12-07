@@ -1,56 +1,110 @@
 <template>
         <div class="homepost">
             <div class="instar">
-                <img src="/img/instart.jpg">
-                <p>mirai_0807</p>
-                <p>kkmm0807@naver.com</p>
-                <p>주문내역 5</p>
-                <p>배송 상태</p>
-                <p></p>
-                <p>임채환<br>
-                   1999.8.7</p>
-                <button>프로필 편집</button>
+                <img src="/img/instart.jpg" class="prisd">
+                <p style="top:25px; left:200px;font-size: 3rem;">Mirai_0807</p>
+                <p style="top:85px; left:202px; font-size: 2rem;" >kkmm0807@naver.com</p>
+                <p style="top:35px; right:600px; font-size: 2.5rem;">주문내역<br>5</p>
+                <p style="top:35px; right:400px; font-size: 2.5rem;">배송 상태<br>배송중</p>
+                <p style="top:35px; right:200px; font-size: 2.5rem;">주문 조회<br>조회하기</p>
+                <form @submit.prevent="logout" style="position: absolute;
+                top:111px; left:320px; width: 300px;">
+                    <jet-dropdown-link as="button">
+                        <p style="font-size: 1.3rem;border : 1px solid black; padding: 0 20px;" class="asdse">로그아웃</p>
+                    </jet-dropdown-link>
+                </form>
+                <button class="prigbe">프로필 수정</button>
             </div>
 
-        </div>
+            <img src="/img/1223.png" class="asdds">
 
+        </div>
 </template>
 <script>
-export default {
-    name:''
-}
+    import { defineComponent } from 'vue'
+    import JetDropdownLink from '@/Jetstream/DropdownLink.vue'
+
+    export default defineComponent({
+        components: {
+                   JetDropdownLink
+
+        },
+        props: {
+            canLogin: Boolean,
+
+        },
+        methods: {
+            logout() {
+                this.$inertia.post(route('logout'));
+            },
+        }
+    })
 </script>
 <style lang="scss">
 .homepost{
+    font-family: 'Nanum Pen Script', cursive;
     width: 100%;
     padding: 50px;
     margin-top: 0px;
     position: relative;
+    .prigbe{
+        position: absolute;
+        top:128px;
+        left:200px;
+        border: 1px solid black;
+        width: 100px;
+        font-size: 1.3rem;
+        padding: 0 ;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
     .postimg1{
         position: absolute;
         top: 0;
-        right:   0;
+        right: 120px;
     }
-
+        .asdds{
+            width: 1380px;
+            position: absolute;
+            top: 0;
+            left: 80px;
+            z-index: 1;
+        }
     .instar{
-        display: flex;
-        flex-wrap: wrap;
+        z-index: 8;
+        background-color: white;
+        position: relative;
         width: 1380px;
         height: 200px;
         margin: 0 auto;
         border: 3px solid black;
+        border-radius: 15px;
 
-        img{
+        .prisd{
             width: 150px;
             height: 150px;
             margin: 20px;
             border-radius: 100%;
-            border: 1px solid black;
+            border: 1px solid rgb(104, 104, 104);
         }
-        button{
-            border: 1px solid black;
-            background-color: white;
+
+        P{
+            text-align: center;
+            position: absolute;
+            font-size: 2rem;
         }
+        .asdse{
+            text-align: center;
+            position: absolute;
+            font-size: 2rem;
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+
     }
 }
 </style>

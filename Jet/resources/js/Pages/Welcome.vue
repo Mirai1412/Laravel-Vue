@@ -1,9 +1,9 @@
 <template>
     <div>
         <div v-if="canLogin" >
-            <Link v-if="$page.props.user" :href="route('Home')" class="text-sm text-gray-700 underline">
-                Home
-            </Link>
+                <Link v-if="$page.props.user" :href="route('Home')" class="text-sm text-gray-700 underline">
+                    Home
+                </Link>
 
             <template v-else>
                 <Link :href="route('login')" class="text-sm text-gray-700 underline">

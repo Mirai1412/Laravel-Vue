@@ -1,7 +1,7 @@
 <template>
         <div class="maincoffee">
             <div class="coffeehader">
-                <img src="/img/f1.png" >
+                <!-- <img src="/img/f1.png" > -->
             <div class="line"/>
                 <h1>인기 메뉴</h1>
             <div class="line2"/>

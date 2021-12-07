@@ -13,6 +13,8 @@ export default {
 </script>
 <style lang="scss">
 .homem {
+    z-index: 8;
+    background-color: white;
     width: 1382px;
     // border-bottom: 3px solid rgb(209, 209, 209);
     border-bottom: 3px solid black;
