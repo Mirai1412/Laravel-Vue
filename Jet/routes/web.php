@@ -19,6 +19,9 @@ use Inertia\Inertia;
 Route::get('/menu', function() {
     return Inertia::render('Menu');
 });
+Route::get('/make', function() {
+    return Inertia::render('Make');
+})->name('Make');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -33,3 +36,12 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 })->name('Home');
+
+
+//하단바
+Route::get('/text1', function() {return Inertia::render('text/Texto');});
+Route::get('/text2', function() {return Inertia::render('text/Textt');});
+Route::get('/text3', function() {return Inertia::render('text/Texts');});
+Route::get('/text4', function() {return Inertia::render('text/Textf');});
+Route::get('/text5', function() {return Inertia::render('text/Textv');});
+//하단바

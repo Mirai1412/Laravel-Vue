@@ -3,10 +3,10 @@
     <!-- <img src="/img/q4.png" class="bti1"> -->
     <div class="buttomul">
       <ul>
-        <li>이용약관</li>
-        <li>고객센터</li>
-        <li>문의하기</li>
-        <li>개인정보처리방침</li>
+        <li><a href="/text2">이용약관</a></li>
+        <li><a href="/text3">고객센터</a></li>
+        <li><a href="/text4">문의하기</a></li>
+        <li><a href="/text5">개인정보처리방침</a></li>
       </ul>
     </div>
 
@@ -45,9 +45,10 @@ export default {
 
 .bottomimg1{
     position: absolute;
-    top: -653px;
-    width: 48%;
+    top: -669px;
+    width: 40%;
     right: -75px;
+
 }
 .bottomimg2{
     position: absolute;

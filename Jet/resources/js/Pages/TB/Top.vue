@@ -11,13 +11,13 @@
                 <li><a href="/menu" class="rl">메뉴</a></li>
                 <li><a href="/coffee" class="rl">주문하기</a></li>
                 <li><a href="/basket" class="rl">장바구니</a></li>
-                <li><a href="/question" class="rl">문의하기</a></li>
+                <li><a href="/text1" class="rl">문의하기</a></li>
             </ul>
         </div>
 
         <div class="headerul2">
                 <div v-if="canLogin == false">
-                    <Link v-if="$page.props.user" :href="route('Home')">
+                    <Link v-if="$page.props.user" :href="route('Make')">
                         <p>메뉴작성</p>
                     </Link>
                     <Link v-if="$page.props.user" :href="route('profile.show')">
@@ -51,7 +51,6 @@
         props: {
             canLogin: Boolean,
             canRegister: Boolean,
-
         },
         methods: {
             logout() {
@@ -73,7 +72,7 @@
     position: absolute;
     right: 0px;
     width: 600px;
-    z-index: 3;
+
   }
   .hi2{
     position: absolute;

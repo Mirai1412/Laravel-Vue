@@ -2,11 +2,11 @@
         <div class="homepost">
             <div class="instar">
                 <img src="/img/instart.jpg" class="prisd">
-                <p style="top:25px; left:200px;font-size: 3rem;">Mirai_0807</p>
-                <p style="top:85px; left:202px; font-size: 2rem;" >kkmm0807@naver.com</p>
-                <p style="top:35px; right:600px; font-size: 2.5rem;">주문내역<br>5</p>
-                <p style="top:35px; right:400px; font-size: 2.5rem;">배송 상태<br>배송중</p>
-                <p style="top:35px; right:200px; font-size: 2.5rem;">주문 조회<br>조회하기</p>
+                <p style="top:20px; left:200px;font-size: 3rem;">Mirai_0807</p>
+                <p style="top:80px; left:202px; font-size: 2rem;" >kkmm0807@naver.com</p>
+                <p style="top:170px; right:410px; font-size: 2rem;">주문내역<br>5</p>
+                <p style="top:170px; right:250px; font-size: 2rem;">배송 상태<br>배송중</p>
+                <p style="top:170px; right:120px; font-size: 2rem;">주문 조회<br>조회하기</p>
                 <form @submit.prevent="logout" style="position: absolute;
                 top:111px; left:320px; width: 300px;">
                     <jet-dropdown-link as="button">
@@ -46,6 +46,7 @@
     width: 100%;
     padding: 50px;
     margin-top: 0px;
+    height: 350px;
     position: relative;
     .prigbe{
         position: absolute;
@@ -68,7 +69,7 @@
         .asdds{
             width: 1380px;
             position: absolute;
-            top: 0;
+            top: -80px;
             left: 80px;
             z-index: 1;
         }
@@ -76,9 +77,9 @@
         z-index: 8;
         background-color: white;
         position: relative;
-        width: 1380px;
-        height: 200px;
-        margin: 0 auto;
+        width: 700px;
+        height: 300px;
+        margin-left: 710px;
         border: 3px solid black;
         border-radius: 15px;
 

@@ -2,7 +2,7 @@
 <div>
     <Top/>
     <Head title="Register" />
-    <jet-authentication-card style="background-color: white">
+    <div class="asdsd">
         <jet-validation-errors class="mb-4" />
 
         <form @submit.prevent="submit">
@@ -38,7 +38,7 @@
                 </jet-label>
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-center mt-4">
                 <Link :href="route('login')" class="underline text-sm text-gray-600 hover:text-gray-900">
                     Already registered?
                 </Link>
@@ -48,7 +48,7 @@
                 </jet-button>
             </div>
         </form>
-    </jet-authentication-card>
+    </div>
     <Control/>
     <Bottom/>
 </div>
@@ -105,3 +105,11 @@
         }
     })
 </script>
+<style lang="scss">
+.asdsd{
+    width: 500px;
+    margin:  0 auto;
+    height: 340px;
+    margin-top: 50px;
+}
+</style>

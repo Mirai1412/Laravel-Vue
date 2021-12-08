@@ -2,7 +2,7 @@
     <div class="mainbox">
          <Top/>
         <div class="homeimg">
-            <img src="/img/d2.png" class="dag">
+            <img src="/img/d2.jpg" class="dag">
         </div>
         <Homepost/>
         <Hometwo/>

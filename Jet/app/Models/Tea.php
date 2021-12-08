@@ -5,13 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-use function PHPSTORM_META\type;
-
 class Tea extends Model
 {
     use HasFactory;
 
-    public function company(){
-        return $this->belongsTo(type::class);
+    protected $fillable = ['type_id', 'name', 'price', 'text'];
+
+    protected $guarded = [];
+
+    public function type(){
+        return $this->belongsTo(Type::class);
     }
+
 }

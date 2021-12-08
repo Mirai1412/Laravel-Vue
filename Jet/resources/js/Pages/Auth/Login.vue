@@ -1,8 +1,8 @@
 <template>
-<div>
+<div style="z-index: 7;">
     <Head title="Log in" />
     <Top/>
-    <jet-authentication-card style="background-color: white;">
+        <div class="logbox">
         <jet-validation-errors class="mb-4" />
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
             {{ status }}
@@ -25,17 +25,18 @@
                 </label>
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-center mt-4">
                 <Link v-if="canResetPassword" :href="route('password.request')" class="underline text-sm text-gray-600 hover:text-gray-900">
                     Forgot your password?
                 </Link>
 
-                <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                <jet-button style="text-align:center; justify-content: center;"
+                class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Log in
                 </jet-button>
             </div>
         </form>
-    </jet-authentication-card>
+    </div>
     <Control/>
     <Bottom/>
 </div>
@@ -100,3 +101,11 @@
         }
     })
 </script>
+<style lang="scss">
+.logbox{
+    width: 500px;
+    margin:  0 auto;
+    height: 265px;
+    margin-top: 75px;
+}
+</style>
