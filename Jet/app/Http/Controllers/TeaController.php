@@ -16,7 +16,7 @@ class TeaController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Menu',['teas' => Tea::all()]);
     }
 
     /**
@@ -26,8 +26,7 @@ class TeaController extends Controller
      */
     public function create()
     {
-        $type = Tea::all();
-        return Inertia::render('Make',['types'=>$type]);
+        return Inertia::render('Make');
     }
 
     /**
@@ -39,28 +38,29 @@ class TeaController extends Controller
     public function store(Request $request)
     {
 
-        $this->validate($request, ['title'=>'required',
-        'content'=>'required|min:3']);
-
-        $fileName = null;
-        if($request->hasFile('image')) {
-        $fileName = time().'_'.
-        $request->file('image')->getClientOriginalName();
-        // $path = $request->file('image')
-        //    ->storeAs('public/images', $fileName);
-       }
-
-        $input = array_merge($request->all(),
-           ["user_id"=>Auth::user()->id]);
-
-        if($fileName) {
-        $input = array_merge($input, ['image' => $fileName]);
-        }
+        $validated = $request->validate([
+            'name' => 'required',
+            'type' => 'required',
+            'text' => 'required',
+            'price' => 'required',
+            'image' => 'image' ,
+        ]);
 
 
-        Tea::create($input);
 
-        return Inertia::render('Menu', ['user'=>auth()->user(), 'teas'=>Auth::user()->tea]);
+
+        $path = $request->image->store('image', 'public');
+
+        $validated = array_merge($validated, ['image' => $path]);
+
+
+        $devices = Tea::create($validated);
+
+
+        $devices->save();
+
+
+        return redirect()->route('Menu');
     }
 
     /**

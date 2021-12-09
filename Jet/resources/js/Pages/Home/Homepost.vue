@@ -13,7 +13,11 @@
                         <p style="font-size: 1.3rem;border : 1px solid black; padding: 0 20px;" class="asdse">로그아웃</p>
                     </jet-dropdown-link>
                 </form>
-                <button class="prigbe">프로필 수정</button>
+                <button class="prigbe">
+                    <a href="route('profile.show')">
+                        장바구니
+                    </a>
+                </button>
             </div>
 
             <img src="/img/1223.png" class="asdds">
@@ -88,7 +92,7 @@
             height: 150px;
             margin: 20px;
             border-radius: 100%;
-            border: 1px solid rgb(104, 104, 104);
+            border: 2px solid rgb(165, 159, 159);
         }
 
         P{

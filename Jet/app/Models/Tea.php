@@ -9,12 +9,15 @@ class Tea extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['type_id', 'name', 'price', 'text'];
+    protected $fillable = ['type', 'name', 'price', 'text','image'];
 
     protected $guarded = [];
 
     public function type(){
         return $this->belongsTo(Type::class);
+    }
+    public function getImageAttribute($value){
+        return 'storage/' . $value; // Accesser
     }
 
 }

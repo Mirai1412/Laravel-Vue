@@ -1,14 +1,11 @@
 <template>
-    <jet-form-section @submitted="updateProfileInformation">
-        <template #title>
-            Profile Information
-        </template>
 
-        <template #description>
-            Update your account's profile information and email address.
-        </template>
+<div >
+    <jet-form-section @submitted="updateProfileInformation"
+    style="margin-right: 230px;"
+    >
 
-        <template #form>
+        <template #form >
             <!-- Profile Photo -->
             <div class="col-span-6 sm:col-span-4" v-if="$page.props.jetstream.managesProfilePhotos">
                 <!-- Profile Photo File Input -->
@@ -30,7 +27,8 @@
                     </span>
                 </div>
 
-                <jet-secondary-button class="mt-2 mr-2" type="button" @click.prevent="selectNewPhoto">
+                <jet-secondary-button class="mt-2 mr-2" type="button" @click.prevent="selectNewPhoto"
+                style="width: 150px;">
                     Select A New Photo
                 </jet-secondary-button>
 
@@ -61,11 +59,13 @@
                 Saved.
             </jet-action-message>
 
-            <jet-button :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+            <jet-button :class="{ 'opacity-25': form.processing }" :disabled="form.processing"
+            style="width: 70px; margin-right: 410px;">
                 Save
             </jet-button>
         </template>
     </jet-form-section>
+    </div>
 </template>
 
 <script>

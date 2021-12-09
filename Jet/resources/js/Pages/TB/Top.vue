@@ -11,7 +11,7 @@
                 <li><a href="/menu" class="rl">메뉴</a></li>
                 <li><a href="/coffee" class="rl">주문하기</a></li>
                 <li><a href="/basket" class="rl">장바구니</a></li>
-                <li><a href="/text1" class="rl">문의하기</a></li>
+                <li><a href="/text1" class="rl">위치</a></li>
             </ul>
         </div>
 
@@ -21,7 +21,7 @@
                         <p>메뉴작성</p>
                     </Link>
                     <Link v-if="$page.props.user" :href="route('profile.show')">
-                        <p>프로필</p>
+                        <p>프로필 수정</p>
                     </Link>
                     <template v-else>
                         <Link :href="route('login')" >

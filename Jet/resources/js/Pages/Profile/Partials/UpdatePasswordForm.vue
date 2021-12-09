@@ -1,12 +1,6 @@
 <template>
-    <jet-form-section @submitted="updatePassword">
-        <template #title>
-            Update Password
-        </template>
+    <jet-form-section @submitted="updatePassword" style="margin-right: 230px;">
 
-        <template #description>
-            Ensure your account is using a long, random password to stay secure.
-        </template>
 
         <template #form>
             <div class="col-span-6 sm:col-span-4">
@@ -33,13 +27,13 @@
                 Saved.
             </jet-action-message>
 
-            <jet-button :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+            <jet-button :class="{ 'opacity-25': form.processing }" :disabled="form.processing"
+            style="width: 70px;  margin-right: 410px;">
                 Save
             </jet-button>
         </template>
     </jet-form-section>
 </template>
-
 <script>
     import { defineComponent } from 'vue'
     import JetActionMessage from '@/Jetstream/ActionMessage.vue'
@@ -91,3 +85,6 @@
         },
     })
 </script>
+<style scoped>
+
+</style>

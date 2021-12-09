@@ -1,12 +1,5 @@
 <template>
-    <jet-action-section>
-        <template #title>
-            Two Factor Authentication
-        </template>
-
-        <template #description>
-            Add additional security to your account using two factor authentication.
-        </template>
+    <jet-action-section style="margin-right: 230px;">
 
         <template #content>
             <h3 class="text-lg font-medium text-gray-900" v-if="twoFactorEnabled">

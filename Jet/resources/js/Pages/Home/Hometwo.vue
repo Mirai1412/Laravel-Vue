@@ -1,5 +1,6 @@
 <template>
         <div class="homem">
+
             <div class="hometitle">
                 <img src="/img/l12.png">
                 <h1>"NO matter what is happening in your life, you always offer tea"</h1>

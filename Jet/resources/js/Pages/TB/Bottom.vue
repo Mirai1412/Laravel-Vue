@@ -5,7 +5,7 @@
       <ul>
         <li><a href="/text2">이용약관</a></li>
         <li><a href="/text3">고객센터</a></li>
-        <li><a href="/text4">문의하기</a></li>
+        <li><a href="/text4">FAQ</a></li>
         <li><a href="/text5">개인정보처리방침</a></li>
       </ul>
     </div>

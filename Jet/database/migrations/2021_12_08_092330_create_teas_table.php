@@ -16,9 +16,7 @@ class CreateTeasTable extends Migration
         Schema::create('teas', function (Blueprint $table) {
             $table->id();
             $table->string('image')->nullable();
-            $table->foreignId('type_id')
-            ->constrained()
-            ->onDelete('cascade');
+            $table->string('type');
             $table->string('name');
             $table->unsignedDecimal('price', $precision = 10, $scale = 2);
             $table->string('text');

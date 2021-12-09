@@ -1,12 +1,5 @@
 <template>
-    <jet-action-section>
-        <template #title>
-            Delete Account
-        </template>
-
-        <template #description>
-            Permanently delete your account.
-        </template>
+    <jet-action-section style="margin-right: 230px;">
 
         <template #content>
             <div class="max-w-xl text-sm text-gray-600">

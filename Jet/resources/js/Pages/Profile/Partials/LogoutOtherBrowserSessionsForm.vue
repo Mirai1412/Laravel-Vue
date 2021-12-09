@@ -1,12 +1,5 @@
 <template>
-    <jet-action-section>
-        <template #title>
-            Browser Sessions
-        </template>
-
-        <template #description>
-            Manage and log out your active sessions on other browsers and devices.
-        </template>
+    <jet-action-section style="margin-right: 230px;">
 
         <template #content>
             <div class="max-w-xl text-sm text-gray-600">

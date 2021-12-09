@@ -22,28 +22,12 @@
                         <h2>장바구니 -></h2>
                 </div>
             </div>
-                        <div class="coffeechose">
-                <div class="homecoffee">
-                    <img src="/img/아메리카노.png" class="coffeeimg">
-                        <h1>{{ title }}</h1>
-                            <p>{{ content }}
-                                <br>
-                            {{ weiter }}
-                            </p>
-                        <h2>장바구니 -></h2>
-                </div>
-            </div>
-                        <div class="coffeechose">
-                <div class="homecoffee">
-                    <img src="/img/아메리카노.png" class="coffeeimg">
-                        <h1>{{ title }}</h1>
-                            <p>{{ content }}
-                                <br>
-                            {{ weiter }}
-                            </p>
-                        <h2>장바구니 -></h2>
-                </div>
-            </div>
+
+          <!-- <div id="app">
+              <h3>kakao map(center, level)</h3>
+              <div class="map-wrapper" style="width:100%, height:600px" ref="kakaomap"></div>
+          </div> -->
+
                 <img src="/img/q5.png" class="tree" >
                 <img src="/img/a4.png" class="tree2" >
         </div>
@@ -56,11 +40,27 @@ export default {
             title : '녹차',
             content : '쓰다',
             weiter : '4500원',
+            mapInstance: null
         };
     },
+    mounted(){
+
+        var container = this.$refs.kakaomap; //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+          center: new window.kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+          level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        this.mapInstance = new window.kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        console.log(mapInstance);
+    }
 };
 </script>
 <style lang="scss">
+  .kmap{
+    width: 100%;
+    height: 600px;
+  }
 .maincoffee {
     width: 1110px;
     margin: 0  213px;

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TeaController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -16,13 +17,9 @@ use Inertia\Inertia;
 */
 
 
-Route::get('/menu', function() {
-    return Inertia::render('Menu');
-});
-Route::get('/make', function() {
-    return Inertia::render('Make');
-})->name('Make');
-
+Route::get('/make', [TeaController::class, 'create'])->name('Make');
+Route::post('/store', [TeaController::class, 'store'])->name('Store');
+Route::get('/menu', [TeaController::class, 'index'])->name('Menu');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -45,3 +42,5 @@ Route::get('/text3', function() {return Inertia::render('text/Texts');});
 Route::get('/text4', function() {return Inertia::render('text/Textf');});
 Route::get('/text5', function() {return Inertia::render('text/Textv');});
 //하단바
+
+

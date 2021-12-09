@@ -12,6 +12,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58d357517a9a5f87bc4feb05108bb76d"></script>
+
         <!-- Scripts -->
         @routes
         <script src="{{ mix('js/app.js') }}" defer></script>

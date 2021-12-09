@@ -14,19 +14,10 @@ class TeaFactory extends Factory
      */
     public function definition()
     {
-        $t = null;
-        if (Tea::all()->count() == 0) {
-            $t = new Tea();
-            $t->name = '홍차';
-            $t->save();
-        }else{
-            $t = Tea::first();
-        }
-
         return [
-            'image'=> 'adsd',
+            'image'=> $this->faker->name(),
             'name' => $this->faker->name(),
-            'type_id' => 1,
+            'type' => '녹차',
             'price' => 3000,
             'text' => '쓰다',
         ];

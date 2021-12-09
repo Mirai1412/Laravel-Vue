@@ -3,9 +3,9 @@
     <Top/>
         <div class="sgsdf">
             <div>
-                <h1 style="text-align:center">환영합니다.</h1>
+                <h1 style="text-align:center;" >환영합니다.</h1>
                 <br>
-                <p style="text-align:center">
+                <p style="text-align:center;">
                 '매화'의 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다.<br>
                 본 약관은 다양한 서비스의 이용과 관련하여 관련 서비스를 제공하는 <br>
                 주식회사'Mirai' 와 이를 이용하는 Mirai 서비스 회원 또는 비회원과의 관계를 설명하며, <br>
@@ -35,14 +35,14 @@ export default {
 </script>
 <style lang="scss">
 .sgsdf{
-    width: 700px;
+    width: 950px;
     margin:  0 auto;
     height: 320px;
     margin-top: 35px;
     font-family: 'Nanum Pen Script', cursive;
 
     h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     }
     p{
     font-size: 1.5rem;

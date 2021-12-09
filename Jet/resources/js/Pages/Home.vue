@@ -1,6 +1,6 @@
 <template>
     <div class="mainbox">
-         <Top/>
+        <Top/>
         <div class="homeimg">
             <img src="/img/d2.jpg" class="dag">
         </div>
@@ -21,6 +21,7 @@ import Hometwo from "./Home/Hometwo.vue";
 import Homepost from "./Home/Homepost.vue";
 
 export default {
+
     components: {
         Homeone,
         Hometwo,
