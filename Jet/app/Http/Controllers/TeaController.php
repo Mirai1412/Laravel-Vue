@@ -16,7 +16,19 @@ class TeaController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Menu',['teas' => Tea::all()]);
+        return Inertia::render('Menu',[
+            'teas' => Tea::orderBy('id', 'desc')->paginate(3)->through(function ($tea) {
+            return [
+                'id' => $tea->id,
+                'image' => $tea->image,
+                'name' => $tea->name,
+                'type' => $tea->type,
+                'text' => $tea->text,
+                'price' => $tea->price,
+            ];
+        }),
+        ]);
+
     }
 
     /**
@@ -71,9 +83,9 @@ class TeaController extends Controller
      */
     public function show($id)
     {
-        $post = Tea::find($id);
+        $teas = Tea::find($id);
 
-        return Inertia::render('show', ['post'=>$post]);
+        return Inertia::render('Show', ['teas'=>$teas]);
     }
 
     /**
@@ -82,9 +94,11 @@ class TeaController extends Controller
      * @param  \App\Models\Tea  $tea
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tea $tea)
+    public function edit($id)
     {
-        //
+        // $tea = Tea::find($id);
+
+        // return Inertia::render('Edit', ['tea'=>$tea]);
     }
 
     /**
@@ -96,7 +110,29 @@ class TeaController extends Controller
      */
     public function update(Request $request, Tea $tea)
     {
-        //
+
+        $validated = $request->validate([
+        'name' => 'required',
+        'type' => 'required',
+        'text' => 'required',
+        'price' => 'required',
+        'image' => 'image' ,
+        ]);
+
+        $path = null;
+
+        if($request->image){
+            $path = $request->image->store('image', 'public');
+        }
+
+        if($path != null){
+            $validated = array_merge($validated, ['image' => $path]);
+        }
+
+        $tea->update($validated);
+
+        return redirect()->route('Show', ['tea'=> $tea->id]);
+
     }
 
     /**
@@ -105,8 +141,14 @@ class TeaController extends Controller
      * @param  \App\Models\Tea  $tea
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tea $tea)
+    public function destroy($id)
     {
-        //
+        $teas = Tea::find($id);
+
+        if($teas != null){
+            $teas->delete();
+        }
+
+        return redirect()->route('Menu');
     }
 }

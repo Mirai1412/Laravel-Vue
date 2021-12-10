@@ -1,10 +1,11 @@
 <template>
     <div class="mainbox">
         <Top/>
+                <Homepost/>
         <div class="homeimg">
             <img src="/img/d2.jpg" class="dag">
         </div>
-        <Homepost/>
+
         <Hometwo/>
         <Homeone/>
         <Bottom/>

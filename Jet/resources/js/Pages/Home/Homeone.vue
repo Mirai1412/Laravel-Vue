@@ -13,16 +13,37 @@
             </div>
             <div class="coffeechose">
                 <div class="homecoffee">
-                    <img src="/img/아메리카노.png" class="coffeeimg">
-                        <h1>{{ title }}</h1>
-                            <p>{{ content }}
-                                <br>
-                            {{ weiter }}
+                    <img src="/img/instart.jpg" class="coffeeimg">
+                        <h1>녹차</h1>
+                            <p style="left: 170px; top: 60px;">따뜻한 한잔으로 가벼운 하루를
                             </p>
-                        <h2>장바구니 -></h2>
+                            <p style="left: 170px; top: 100px;">
+                            5200원
+                            </p>
                 </div>
             </div>
-
+            <div class="coffeechose">
+                <div class="homecoffee">
+                    <img src="/img/instart.jpg" class="coffeeimg">
+                        <h1>홍차</h1>
+                            <p style="left: 170px; top: 60px;">영국 신사의 깊은 맛
+                            </p>
+                            <p style="left: 170px; top: 100px;">
+                            8200원
+                            </p>
+                </div>
+            </div>
+            <div class="coffeechose">
+                <div class="homecoffee">
+                    <img src="/img/instart.jpg" class="coffeeimg">
+                        <h1>진달래차</h1>
+                            <p style="left: 170px; top: 60px;">끓는 물에 3분!
+                            </p>
+                            <p style="left: 170px; top: 100px;">
+                            1200원
+                            </p>
+                </div>
+            </div>
           <!-- <div id="app">
               <h3>kakao map(center, level)</h3>
               <div class="map-wrapper" style="width:100%, height:600px" ref="kakaomap"></div>
@@ -43,17 +64,6 @@ export default {
             mapInstance: null
         };
     },
-    mounted(){
-
-        var container = this.$refs.kakaomap; //지도를 담을 영역의 DOM 레퍼런스
-        var options = { //지도를 생성할 때 필요한 기본 옵션
-          center: new window.kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
-          level: 3 //지도의 레벨(확대, 축소 정도)
-        };
-
-        this.mapInstance = new window.kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-        console.log(mapInstance);
-    }
 };
 </script>
 <style lang="scss">
@@ -141,28 +151,23 @@ export default {
             font-family: 'Nanum Pen Script', cursive;
             font-size: 1.5em;
             z-index: 6;
-            width: 80%;
+            width: 60%;
             height: 150px;
+            border-radius: 20px;
             border: 1px solid rgb(175, 175, 175);
             position: relative;
                 .coffeeimg{
                     height: 100%;
+                    border-radius: 20px;
                 }
                 h1{
-                    top: 10px;
-                    left: 15rem;
+                    top: 15px;
+                    left: 170px;
                     position: absolute;
                     margin: 0;
+                    font-size: 2rem;
                 }
                 p{
-                    top: 4.5rem;
-                    left: 15rem;
-                    position: absolute;
-                    margin: 0;
-                }
-                h2{
-                    top: 3.5rem;
-                    right: 2rem;
                     position: absolute;
                     margin: 0;
                 }

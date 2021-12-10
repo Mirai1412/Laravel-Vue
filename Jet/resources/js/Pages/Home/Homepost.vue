@@ -4,9 +4,9 @@
                 <img src="/img/instart.jpg" class="prisd">
                 <p style="top:20px; left:200px;font-size: 3rem;">Mirai_0807</p>
                 <p style="top:80px; left:202px; font-size: 2rem;" >kkmm0807@naver.com</p>
-                <p style="top:170px; right:410px; font-size: 2rem;">주문내역<br>5</p>
-                <p style="top:170px; right:250px; font-size: 2rem;">배송 상태<br>배송중</p>
-                <p style="top:170px; right:120px; font-size: 2rem;">주문 조회<br>조회하기</p>
+                <p style="top:170px; right:500px; font-size: 2rem;">주문내역<br>5</p>
+                <p style="top:170px; right:340px; font-size: 2rem;">배송 상태<br>배송중</p>
+                <p style="top:170px; right:210px; font-size: 2rem;">주문 조회<br>조회하기</p>
                 <form @submit.prevent="logout" style="position: absolute;
                 top:111px; left:320px; width: 300px;">
                     <jet-dropdown-link as="button">
@@ -20,7 +20,7 @@
                 </button>
             </div>
 
-            <img src="/img/1223.png" class="asdds">
+            <img src="/img/t4.png" class="asdds">
 
         </div>
 </template>
@@ -49,8 +49,10 @@
     font-family: 'Nanum Pen Script', cursive;
     width: 100%;
     padding: 50px;
+    padding-top: 100px;
     margin-top: 0px;
     height: 350px;
+
     position: relative;
     .prigbe{
         position: absolute;
@@ -71,9 +73,10 @@
         right: 120px;
     }
         .asdds{
-            width: 1380px;
+            width: 600px;
+            height: 400px;
             position: absolute;
-            top: -80px;
+            top: 50px;
             left: 80px;
             z-index: 1;
         }
@@ -81,9 +84,9 @@
         z-index: 8;
         background-color: white;
         position: relative;
-        width: 700px;
+        width: 780px;
         height: 300px;
-        margin-left: 710px;
+        margin-left: 620px;
         border: 3px solid black;
         border-radius: 15px;
 

@@ -18,7 +18,7 @@ class CreateTeasTable extends Migration
             $table->string('image')->nullable();
             $table->string('type');
             $table->string('name');
-            $table->unsignedDecimal('price', $precision = 10, $scale = 2);
+            $table->string('price');
             $table->string('text');
             $table->timestamps();
         });

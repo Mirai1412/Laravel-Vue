@@ -20,6 +20,13 @@ use Inertia\Inertia;
 Route::get('/make', [TeaController::class, 'create'])->name('Make');
 Route::post('/store', [TeaController::class, 'store'])->name('Store');
 Route::get('/menu', [TeaController::class, 'index'])->name('Menu');
+Route::get('/show/{tea}', [TeaController::class, 'show'])->name('Show');
+Route::delete('/teas/{tea}', [TeaController::class, 'destroy']);
+
+Route::post('/teas/{tea}',[TeaController::class, 'update'])->name('Update');
+
+Route::get('/peas1', function() {return Inertia::render('Xoasf');});
+Route::get('/peas2', function() {return Inertia::render('Xeasf');});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');

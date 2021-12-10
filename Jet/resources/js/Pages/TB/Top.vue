@@ -9,8 +9,8 @@
             <ul>
                 <li><a href="/" class="rl">메인</a></li>
                 <li><a href="/menu" class="rl">메뉴</a></li>
-                <li><a href="/coffee" class="rl">주문하기</a></li>
-                <li><a href="/basket" class="rl">장바구니</a></li>
+                <li><a href="/peas1" class="rl">주문하기</a></li>
+                <li><a href="/peas2" class="rl">장바구니</a></li>
                 <li><a href="/text1" class="rl">위치</a></li>
             </ul>
         </div>

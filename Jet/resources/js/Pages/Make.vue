@@ -4,39 +4,38 @@
   <div class="makepage">
         <form  @submit.prevent="addtea"  enctype="multipart/form-data">
             <input type="hidden" name="_token" v-bind:value="csrf">
-            <h1>메뉴 작성</h1>
+            <h1 style="text-align: center; font-size:3rem">메뉴 작성</h1>
 
-        <div >
-            <label for="image">이미지</label>
-            <input type="file" id="image" @input="form.image = $event.target.files[0]">
-        </div>
-            <div v-if="errors.image">{{ errors.image }}</div>
 
         <div>
-        <label for="name">이름 : </label>
-        <input type="text"  id="name" placeholder="Name" v-model="this.form.name" style="width:30%" >
+        <input type="text"  id="name" placeholder="Tea Name" v-model="this.form.name"  >
         </div>
             <div v-if="errors.name">{{ errors.name }}</div>
 
         <div >
-        <label for="text">설명 : </label>
-        <input type="text"  id="text" placeholder="text" v-model="this.form.text" style="width:30%" >
+        <input type="text"  id="text" placeholder="Explanation" v-model="this.form.text"  >
         </div>
             <div v-if="errors.text">{{ errors.text }}</div>
 
         <div>
-        <label for="price">가격 : </label>
-        <input type="text"  id="price" placeholder="'원'빼고 입력" v-model="this.form.price" style="width:30%" >
+        <input type="text"  id="price" placeholder="Money" v-model="this.form.price"  >
         </div>
             <div v-if="errors.price">{{ errors.price }}</div>
 
         <div>
-        <label for="type">종류 : </label>
-        <input type="text" id="type" placeholder="type" v-model="this.form.type" style="width:30%" >
+        <input type="text" id="type" placeholder="Type" v-model="this.form.type" >
         </div>
             <div v-if="errors.type">{{ errors.type }}</div>
 
-        <button type="submit" class="btn btn-primary font-bold text-xl mx-2 my-2">작성</button>
+        <div >
+            <input type="file" id="image" @input="form.image = $event.target.files[0]" class="ashjrt"
+            >
+        </div>
+            <div v-if="errors.image">{{ errors.image }}</div>
+
+
+        <button type="submit" class="btn btn-primary font-bold text-xl mx-2 my-2"
+        style="margin-left: 145px;">작성</button>
         <a href="/" class="btn btn-primary font-bold text-xl mx-2 my-2">메인으로</a>
         </form>
 
@@ -83,13 +82,20 @@ export default {
 </script>
 <style lang="scss">
 .makepage{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.5rem;
     width: 500px;
     margin:  0 auto;
-    height: 265px;
-    margin-top: 75px;
+    height: 550px;
+    margin-top: 20px;
 }
-    button:hover {
-        color: #0077ff;
+    button {
+       background-color: none;
+
+    }
+    input{
+      width: 500px;
+      margin: 10px 0;
     }
 </style>
 
