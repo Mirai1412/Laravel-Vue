@@ -28,7 +28,7 @@ export default {
     width: 16%;
     height: 80%;
     margin-top: 8rem;
-    -webkit-transform: skew(15deg);
+    // -webkit-transform: skew(15deg);
 
     border: 1px solid black;
 
