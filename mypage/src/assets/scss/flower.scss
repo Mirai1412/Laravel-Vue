@@ -1,8 +1,165 @@
-#flower{
+#flower1{
     position: absolute;
-    top: 250px;
-    left: 250px;
-    width: 50px;
-    height: 25px;
-    
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+
+    animation-name: leaf1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+    #leaf1{
+      color: #e2b5c9; 
+      font-size: 2vmax;
+    }
+  }
+
+  @keyframes leaf1{
+    0%{
+      left:-10%; 
+    }
+    100%{
+          left: 120%;
+          bottom: 80%;
+          transform: rotate3D(1,1,1,360deg);
+        }
+    }
+// --------------------------------------------//
+#flower2{
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+
+  animation-name: leaf2;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+
+  #leaf2{
+    color: #e2b5c9; 
+    font-size: 2.5vmax;
+  }
+}
+
+@keyframes leaf2{
+  0%{
+    left:-10%; 
+  }
+  100%{
+      transform: rotate3D(1,1,1,360deg);
+        left: 120%;
+        bottom: 60%;
+      }
+  }
+// --------------------------------------------//
+#flower3{
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+
+  animation-name: leaf3;
+  animation-iteration-count: infinite;
+  animation-duration: 4.5s;
+
+  #leaf3{
+    color: #e2b5c9; 
+    font-size: 2vmax;
+  }
+}
+
+@keyframes leaf3{
+  0%{
+    left:-10%; 
+    bottom: 10%;
+  }
+  100%{
+      transform: rotate3D(1,1,1,360deg);
+        left: 120%;
+        bottom: 50%;
+      }
+  }
+// --------------------------------------------//
+#flower4{
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+
+  animation-name: leaf4;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+
+  #leaf4{
+    color: #e2b5c9; 
+    font-size: 3vmax;
+  }
+}
+
+@keyframes leaf4{
+  0%{
+    left:-10%; 
+    bottom: 5%;
+  }
+  100%{
+      transform: rotate3D(1,1,1,360deg);
+        left: 120%;
+        bottom: 45%;
+      }
+  }
+// --------------------------------------------//
+#flower5{
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+
+  animation-name: leaf5;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+
+  #leaf5{
+    color: #e2b5c9; 
+    font-size: 2.5vmax;
+  }
+}
+
+@keyframes leaf5{
+  0%{
+    left:-10%; 
+    bottom: 7%;
+  }
+  100%{
+      transform: rotate3D(1,1,1,360deg);
+        left: 110%;
+        bottom: 35%;
+      }
+  }
+// --------------------------------------------//
+#flower6{
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+
+  animation-name: leaf6;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+
+  #leaf6{
+    color: #e2b5c9; 
+    font-size: 2.5vmax;
+  }
+}
+
+@keyframes leaf6{
+  0%{
+    left:-10%; 
+    bottom: 3%;
+  }
+  100%{
+      transform: rotate3D(1,1,1,360deg);
+        left: 110%;
+        bottom: 47%;
+      }
   }

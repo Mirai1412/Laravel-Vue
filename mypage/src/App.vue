@@ -6,10 +6,28 @@
       <h1 id="titles">Portfolio to Mirai</h1>
       <h1 id="subtitles">Yeungjin College</h1>
 
-      <div id="flower">
-        <font-awesome-icon icon="spinner" size="xs" />
-        <!-- <font-awesome-icon icon="user-secret" /> -->
-        <h1>asdad</h1>
+      <div id="flower1">
+        <font-awesome-icon :icon="['fas', 'leaf']" id="leaf1"/>
+      </div>
+
+      <div id="flower2">
+        <font-awesome-icon :icon="['fas', 'leaf']" id="leaf2"/>
+      </div>
+
+      <div id="flower3">
+        <font-awesome-icon :icon="['fas', 'leaf']" id="leaf3"/>
+      </div>
+
+      <div id="flower4">
+        <font-awesome-icon :icon="['fas', 'leaf']" id="leaf4"/>
+      </div>
+
+      <div id="flower5">
+        <font-awesome-icon :icon="['fas', 'leaf']" id="leaf5"/>
+      </div>
+
+      <div id="flower6">
+        <font-awesome-icon :icon="['fas', 'leaf']" id="leaf6"/>
       </div>
 
     </div>
@@ -18,6 +36,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'App',
 
@@ -33,7 +52,7 @@ export default {
 
 body{
   margin: 0 auto;
-  max-height: 719.2px;
+  overflow: hidden;
 }
 
 </style>
