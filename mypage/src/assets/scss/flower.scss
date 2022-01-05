@@ -7,6 +7,7 @@
     animation-name: leaf1;
     animation-iteration-count: infinite;
     animation-duration: 5s;
+    animation-delay: 2s;
 
     #leaf1{
       color: #e2b5c9; 
@@ -19,8 +20,9 @@
       left:-10%; 
     }
     100%{
-          left: 120%;
+          left: 115%;
           bottom: 80%;
+          font-size: 3vmax;
           transform: rotate3D(1,1,1,360deg);
         }
     }
@@ -34,6 +36,7 @@
   animation-name: leaf2;
   animation-iteration-count: infinite;
   animation-duration: 6s;
+  animation-delay: 2.8s;
 
   #leaf2{
     color: #e2b5c9; 
@@ -47,8 +50,9 @@
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
-        left: 120%;
+        left: 112%;
         bottom: 60%;
+        font-size: 3vmax;
       }
   }
 // --------------------------------------------//
@@ -61,6 +65,7 @@
   animation-name: leaf3;
   animation-iteration-count: infinite;
   animation-duration: 4.5s;
+  animation-delay: 2.4s;
 
   #leaf3{
     color: #e2b5c9; 
@@ -75,7 +80,7 @@
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
-        left: 120%;
+        left: 115%;
         bottom: 50%;
       }
   }
@@ -89,6 +94,7 @@
   animation-name: leaf4;
   animation-iteration-count: infinite;
   animation-duration: 4s;
+  animation-delay: 2.5s;
 
   #leaf4{
     color: #e2b5c9; 
@@ -117,6 +123,7 @@
   animation-name: leaf5;
   animation-iteration-count: infinite;
   animation-duration: 7s;
+  animation-delay: 2.3s;
 
   #leaf5{
     color: #e2b5c9; 
@@ -131,7 +138,7 @@
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
-        left: 110%;
+        left: 115%;
         bottom: 35%;
       }
   }
@@ -145,6 +152,7 @@
   animation-name: leaf6;
   animation-iteration-count: infinite;
   animation-duration: 6s;
+  animation-delay: 3s;
 
   #leaf6{
     color: #e2b5c9; 
@@ -159,7 +167,7 @@
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
-        left: 110%;
+        left: 130%;
         bottom: 47%;
       }
   }

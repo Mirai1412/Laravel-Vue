@@ -4,7 +4,7 @@
     <div id="mainbox">
 
       <h1 id="titles">Portfolio to Mirai</h1>
-      <h1 id="subtitles">Yeungjin College</h1>
+      <h1 id="subtitles">- Yeungjin College -</h1>
 
       <div id="flower1">
         <font-awesome-icon :icon="['fas', 'leaf']" id="leaf1"/>
@@ -30,6 +30,26 @@
         <font-awesome-icon :icon="['fas', 'leaf']" id="leaf6"/>
       </div>
 
+    <div id="boxs">
+      
+      <div id="linkbox">
+        <font-awesome-icon :icon="['fas', 'handshake']" id="mylink"/>
+        <h1>About Me</h1>
+      </div>
+
+      <div id="skillbox">
+        <font-awesome-icon :icon="['fas', 'tools']" id="tools"/>
+        <h1>Skill</h1>
+      </div>
+
+      <div id="projectbox">
+        <font-awesome-icon :icon="['fas', 'book-reader']" id="books"/>
+        <h1>Project</h1>
+      </div>
+
+    </div>
+
+
     </div>
     </v-main>
   </v-app>
@@ -49,6 +69,7 @@ export default {
 <style lang="scss">
 @import '@/assets/scss/flower.scss';
 @import '@/assets/scss/main.scss';
+@import '@/assets/scss/boxs.scss';
 
 body{
   margin: 0 auto;
