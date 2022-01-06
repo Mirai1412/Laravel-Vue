@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
 #mainbox{
-    background-image: url("../public/img/bsdf.jpg");
+    //background-image: url("../public/img/bsdf.jpg");
     background-size: cover;
     background-position: center;
     width: 100vw;
     height: 100vh;
     font-family: 'Vujahday Script', cursive;
   
+
+
     #titles{
       width: 100%;
       position: absolute;
       font-size: 7vmax;
-      text-align: center;
-      color: rgb(245, 179, 239);
-      text-shadow: 2px 5px 2px gray; 
-      // -webkit-text-stroke: 3px white;
+      text-align: center; 
+      text-shadow: 2px 1px 2px rgb(255, 91, 91); 
+      color: rgb(255, 161, 213);
+
+
+      // span{
+      //   background: linear-gradient(to right, #ee9ca7, #ffe0e4, #ee9ca7);
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;
+      // }
+
+
       animation-name: titles;
       animation-duration: 2s;
       animation-fill-mode: forwards;
@@ -33,15 +43,24 @@
       position: absolute;
       font-size: 4vmax;
       text-align: center;
-      color: rgb(253, 166, 220);
-      text-shadow: 2px 3px 2px gray; 
-      // -webkit-text-stroke: 3px white;
+
       opacity: 0;
       animation-name: subtitles;
       animation-duration: 2s;
       animation-delay: 1s;
       animation-fill-mode: forwards;
+      text-shadow: 2px 1px 2px rgb(255, 91, 91); 
+      color: rgb(255, 161, 213);
+
+      // span{
+      //   background: linear-gradient(to right, #ee9ca7, #ffe0e4, #ee9ca7);
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;
+      // }
+
     }
+
+
       @keyframes subtitles {
           100%{
           top:13vmax;
@@ -50,7 +69,8 @@
           0%{
           top:30vmax;
           opacity: 0;
+          
         }
     }
-  
+
   }

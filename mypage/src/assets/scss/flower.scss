@@ -8,6 +8,7 @@
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-delay: 2s;
+    opacity: 0;
 
     #leaf1{
       color: #e2b5c9; 
@@ -17,13 +18,15 @@
 
   @keyframes leaf1{
     0%{
-      left:-10%; 
+      left:-20%; 
+      opacity: 1;
     }
     100%{
           left: 115%;
           bottom: 80%;
           font-size: 3vmax;
           transform: rotate3D(1,1,1,360deg);
+          opacity: 1;
         }
     }
 // --------------------------------------------//
@@ -32,6 +35,7 @@
   bottom: 0;
   height: 30px;
   width: 30px;
+  opacity: 0;
 
   animation-name: leaf2;
   animation-iteration-count: infinite;
@@ -46,13 +50,15 @@
 
 @keyframes leaf2{
   0%{
-    left:-10%; 
+    left:-20%; 
+    opacity: 1;
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
         left: 112%;
         bottom: 60%;
         font-size: 3vmax;
+        opacity: 1;
       }
   }
 // --------------------------------------------//
@@ -61,6 +67,7 @@
   bottom: 0;
   height: 30px;
   width: 30px;
+  opacity: 0;
 
   animation-name: leaf3;
   animation-iteration-count: infinite;
@@ -75,13 +82,15 @@
 
 @keyframes leaf3{
   0%{
-    left:-10%; 
-    bottom: 10%;
+    left:-20%; 
+    bottom: -10%;
+    opacity: 1;
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
         left: 115%;
         bottom: 50%;
+        opacity: 1;
       }
   }
 // --------------------------------------------//
@@ -90,6 +99,7 @@
   bottom: 0;
   height: 30px;
   width: 30px;
+  opacity: 0;
 
   animation-name: leaf4;
   animation-iteration-count: infinite;
@@ -104,13 +114,15 @@
 
 @keyframes leaf4{
   0%{
-    left:-10%; 
-    bottom: 5%;
+    left:-20%; 
+    bottom: -5%;
+    opacity: 1;
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
         left: 120%;
         bottom: 45%;
+        opacity: 1;
       }
   }
 // --------------------------------------------//
@@ -119,6 +131,7 @@
   bottom: 0;
   height: 30px;
   width: 30px;
+  opacity: 0;
 
   animation-name: leaf5;
   animation-iteration-count: infinite;
@@ -129,17 +142,20 @@
     color: #e2b5c9; 
     font-size: 2.5vmax;
   }
+  
 }
 
 @keyframes leaf5{
   0%{
-    left:-10%; 
-    bottom: 7%;
+    left:-20%; 
+    bottom: -7%;
+    opacity: 1;
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
         left: 115%;
         bottom: 35%;
+        opacity: 1;
       }
   }
 // --------------------------------------------//
@@ -148,6 +164,7 @@
   bottom: 0;
   height: 30px;
   width: 30px;
+  opacity: 0;
 
   animation-name: leaf6;
   animation-iteration-count: infinite;
@@ -162,12 +179,14 @@
 
 @keyframes leaf6{
   0%{
-    left:-10%; 
-    bottom: 3%;
+    left:-20%; 
+    bottom: -3%;
+    opacity: 1;
   }
   100%{
       transform: rotate3D(1,1,1,360deg);
         left: 130%;
         bottom: 47%;
+        opacity: 1;
       }
   }
