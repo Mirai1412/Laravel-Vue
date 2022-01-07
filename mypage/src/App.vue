@@ -40,7 +40,7 @@
       </div>
 
       <div id="skillbox">
-        <button v-on:click="aboutbutton">
+        <button v-on:click="skillbutton">
         <font-awesome-icon :icon="['fas', 'tools']" id="tools"/>
         <h1>Skill</h1>
           </button>
@@ -72,8 +72,25 @@ export default {
   methods:{
     aboutbutton:function(){
       this.$swal({
-        showCancelButton: true,
-        
+        title:"About Me",
+        customClass: {
+          container: "aboutbuttonid",
+        },
+      }
+      );
+    },
+    skillbutton:function(){
+      this.$swal({
+        title:"My Skill",
+        showConfirmButton: false,
+         showCloseButton: true,
+        html:
+        '<p id="front">Front-end</p>'+
+        '<div id="line1"></div>'+
+        '<p id="back">Back-end</p>',
+        customClass: {
+          container: "skillbuttonid",
+        },
       }
       );
     }
