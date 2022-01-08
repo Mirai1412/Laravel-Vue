@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
 #mainbox{
-    background-image: url("../public/img/bsdf.jpg");
+    background-image: url("../public/img/k5.png");
     background-size: cover;
     background-position: center;
     width: 100vw;
     height: 100vh;
     font-family: 'Vujahday Script', cursive;
-  
+    
+    // #blackbox{
+    //   background-color: black;
+    //   width: 100vw;
+    //   height: 100vw;
+    //   opacity: 0.5;
+    // }
+
 
 
     #titles{
@@ -14,8 +21,8 @@
       position: absolute;
       font-size: 7vmax;
       text-align: center; 
-      text-shadow: 2px 1px 2px rgb(255, 91, 91); 
-      color: rgb(255, 161, 213);
+      text-shadow: 2px 1px 2px rgb(151, 151, 151); 
+      color: rgb(255, 119, 194);
 
 
       // span{
@@ -49,8 +56,8 @@
       animation-duration: 2s;
       animation-delay: 1s;
       animation-fill-mode: forwards;
-      text-shadow: 2px 1px 2px rgb(255, 91, 91); 
-      color: rgb(255, 161, 213);
+      text-shadow: 2px 2px 2px rgb(189, 189, 189); 
+      color: rgb(255, 119, 194);
 
       // span{
       //   background: linear-gradient(to right, #ee9ca7, #ffe0e4, #ee9ca7);
