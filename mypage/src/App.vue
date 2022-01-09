@@ -72,6 +72,17 @@ export default {
         title:"About Me",
         showConfirmButton: false,
         showCloseButton: true,
+        html:        
+        '<img src="./img/te.png" class="myimg">'
+        +
+        '<h1  class="hname">임채환</h1>'
+        +
+        '<div class="hbox"><h1  class="hschool">학교</h1><h1  class="htel">연락처</h1><h1  class="hgit">깃 허브</h1><h1  class="hinstar">인스타</h1></div>'
+        +
+        '<p class="pbday">1999.8.7</p>'
+        +
+        '<div class="pbox"><p class="pschool">영진전문대학교<br>컴퓨터정보계열</p><p class="ptel">Tel : 010-9115-2813<br>Email : kkas0807@naver.com</p><p class="pgit">https://github.com/Mirai1412</p><p class="pinstar">ID : Mirai_0807</p></div>'
+        ,
         customClass: {
           container: "aboutbuttonid",
         },

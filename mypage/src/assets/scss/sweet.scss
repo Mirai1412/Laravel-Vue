@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 .skillbuttonid{
     .swal2-popup{
         width: 90vw;
@@ -80,32 +81,24 @@
             position: absolute;
             width: 10vw;
             right: 30vw;
-            top: 25vh;
+            top: 30vh;
         }
-
-
-
-
-
-
-
-
 
     }
 }
 .aboutbuttonid{
+
     .swal2-popup{
         width: 90vw;
         height: 90vh;
         position: relative;
         border: 15px solid pink;
-        font-family: 'Vujahday Script', cursive;
-
+        font-family: 'Single Day', cursive;
 
         #swal2-title{
             width: 100%;
             position: absolute;
-            top: 5vh;
+            top: 3vh;
             left: 50%;
             transform: translate(-50%, -50%);
             color: pink;
@@ -114,7 +107,76 @@
      
         }
         
-    
+        .myimg{
+            position: absolute;
+            left: 5vw;
+            top: 20vh;
+            width: 13rem;
+            height: 13rem;
+            padding: 1.8rem 0 0 0.9rem;
+            border: 10px solid pink;
+            border-radius: 100%;
+        }
+        .hname{
+            position: absolute;
+            left: 6.8vw;
+            bottom: 24vh;
+            font-size: 4rem;
+        }
+        .pbday{
+            position: absolute;
+            left: 8.8vw;
+            bottom: 17vh;
+            font-size: 2rem;
+        }
+
+        .hbox{
+            position: absolute;
+            left: 20vw;
+            top: 30vh;
+            font-size: 2rem;
+            display: flex;
+
+            .hschool{
+                margin: 0 3.7vw;
+            }
+            .htel{
+                margin: 0 3.7vw;
+            }
+            .hgit{
+                margin: 0 3.7vw;
+            }
+            .hinstar{
+                margin: 0 3.7vw;
+            }
+        }
+
+        .pbox{
+            position: absolute;
+            left: 23vw;
+            top: 48vh;
+            font-size: 1.5rem;
+            display: flex; 
+
+            .pschool{
+                line-height: 6vh;
+                padding-bottom: 1rem;
+                margin-right: 2vw;
+            }
+            .ptel{
+                line-height: 6vh;
+                margin-right: 0;
+      
+            }
+            .pgit{
+                padding-top: 1vh;
+                margin-right: 4.8vw;
+            }
+            .pinstar{
+                padding-top: 1vh;
+            }
+        }
+
 
     }
 }
