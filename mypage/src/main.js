@@ -7,6 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faLeaf } from '@fortawesome/free-solid-svg-icons'
 import { faBookReader } from '@fortawesome/free-solid-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faHandshake } from '@fortawesome/free-solid-svg-icons'
 import { faTools } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -17,7 +18,8 @@ Vue.use(VueSweetalert2);
 
 Vue.config.productionTip = false
 
-library.add(faUserSecret, faFontAwesome, faLeaf, faTools, faBookReader, faHandshake)
+library.add(faUserSecret, faFontAwesome, faLeaf, faPlus
+  ,faTools, faBookReader, faHandshake)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

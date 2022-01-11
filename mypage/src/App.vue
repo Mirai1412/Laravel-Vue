@@ -81,7 +81,7 @@ export default {
         +
         '<p class="pbday">1999.8.7</p>'
         +
-        '<div class="pbox"><p class="pschool">영진전문대학교<br>컴퓨터정보계열</p><p class="ptel">Tel : 010-9115-2813<br>Email : kkas0807@naver.com</p><p class="pgit">https://github.com/Mirai1412</p><p class="pinstar">ID : Mirai_0807</p></div>'
+        '<div class="pbox"><p class="pschool">영진전문대학교<br>컴퓨터정보계열</p><p class="ptel">Tel : 010-9115-2813<br>Email : kkas0807@naver.com</p><p class="pgit">github.com/Mirai1412</p><p class="pinstar">Mirai_0807</p></div>'
         ,
         customClass: {
           container: "aboutbuttonid",
@@ -115,6 +115,13 @@ export default {
         title:"My ProJect",
         showConfirmButton: false,
         showCloseButton: true,
+        html:
+        '<div id="line2"></div>'
+        +
+        '<div id="projectbox1"><div class="puls1"><div class="pulsy"></div><div class="pulsx"></div></div></div>'
+        +
+        '<div id="projectbox2"><div class="puls2"><div class="pulsy"></div><div class="pulsx"></div></div></div>'
+        ,
         customClass: {
           container: "projectboxid",
         },
