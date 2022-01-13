@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main id="app">
     <div id="mainbox">
       <div id="blackbox"></div>
       <h1 id="titles"><span>Portfolio to Mirai</span></h1>
@@ -52,7 +52,6 @@
         <h1>Project</h1>
         </button>
       </div>
-      
     </div>
      </div>
     </v-main>
@@ -60,28 +59,36 @@
 </template>
 
 <script>
+import About from './components/About.vue';
 
 export default {
   name: 'App',
   components: {
-
+    About
   },
+  
   methods:{
     aboutbutton:function(){
       this.$swal({
         title:"About Me",
         showConfirmButton: false,
         showCloseButton: true,
-        html:        
-        '<img src="./img/te.png" class="myimg">'
-        +
-        '<h1  class="hname">임채환</h1>'
-        +
-        '<div class="hbox"><h1  class="hschool">학교</h1><h1  class="htel">연락처</h1><h1  class="hgit">깃 허브</h1><h1  class="hinstar">인스타</h1></div>'
-        +
-        '<p class="pbday">1999.8.7</p>'
-        +
-        '<div class="pbox"><p class="pschool">영진전문대학교<br>컴퓨터정보계열</p><p class="ptel">Tel : 010-9115-2813<br>Email : kkas0807@naver.com</p><p class="pgit">github.com/Mirai1412</p><p class="pinstar">Mirai_0807</p></div>'
+        html:
+        '<div class="aboutbox">'+
+          '<div class="imgnamebox">'+
+            '<img src="./img/te.png" class="myimg">'+
+            '<h1  class="hname">임채환</h1>'+
+            '<p class="ename">Lim ChaeHwan</p>'+
+          '</div>'+
+            '<div class="mylinkbox">'+
+            '<div class="about1"><h1 class="hschool">출신학교</h1><br><p class="pschool">영진전문대학교<br>컴퓨터정보계열</p></div>'+
+            '<div class="about1"><h1  class="htel">연락처</h1><br><p class="ptel">Tel : 010-9115-2813></p></div>'+
+            '<div class="about1"><h1  class="hemail">이메일</h1><br><p class="pemail">Email : kkas0807@naver.com</p></div>'+
+            '<div class="about1"><h1  class="hgit">깃 허브</h1><br><a href="https://github.com/Mirai1412" class="pgit">github.com/Mirai1412</a></div>'+
+            '<div class="about1"><h1  class="hinstar">인스타</h1><br><a href="https://github.com/Mirai1412" class="pgit">github.com/Mirai1412</a></div>'+
+            '<div class="about1"><h1  class="hday">생년월일</h1><br><p class="pday">1999.08.07</p></div>'+
+          '</div>'+
+        '</div>'
         ,
         customClass: {
           container: "aboutbuttonid",

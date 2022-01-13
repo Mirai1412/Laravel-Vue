@@ -13,6 +13,7 @@ import { faTools } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 import 'sweetalert2/dist/sweetalert2.min.css';
+import About from '@/components/About.vue'
 
 Vue.use(VueSweetalert2);
 
